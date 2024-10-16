@@ -1,0 +1,8 @@
+.json-input {
+    width: calc(100% - 16px);
+    height: 100px;
+    resize: vertical;
+    border: 1px solid lightgray;
+    padding: 4px;
+    margin: 8px 8px 0 8px;
+}

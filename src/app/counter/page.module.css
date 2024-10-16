@@ -1,0 +1,22 @@
+.block-counter-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(116px, auto));
+    justify-items: stretch;
+}
+
+.block-counter-counter {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.block-counter-info {
+    grid-area: -1 / 1 / -1 / -1;
+    margin: 8px;
+    padding: 4px;
+}
+
+.label-input {
+    grid-area: 1 / 2 / 2 / -1;
+    justify-self: stretch;
+    align-self: auto;
+}

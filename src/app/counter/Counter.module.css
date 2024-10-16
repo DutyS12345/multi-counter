@@ -1,0 +1,36 @@
+.block-counter {
+    min-width: 200px;
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    padding: 4px;
+    margin: 8px;
+}
+
+.block-counter__label {
+    align-self: stretch;
+    text-align: center;
+}
+
+.block-counter__counter {
+    align-self: stretch;
+    text-align: center;
+}
+
+.increment,
+.decrement {
+    width: 45%;
+    box-sizing: border-box;
+    border: 1px;
+    background: #eeeeee;
+}
+
+.horizontal-input {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
