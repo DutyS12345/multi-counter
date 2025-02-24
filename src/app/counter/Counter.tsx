@@ -3,18 +3,12 @@ import { Dispatch, PropsWithChildren, SetStateAction, useState } from "react"
 import styles from './Counter.module.css';
 
 type CounterProps = {
-    label?: string,
-    setLabel?: Dispatch<SetStateAction<string>>,
-    count?: number,
-    setCount?: Dispatch<SetStateAction<number>>,
+    label: string,
+    setLabel: Dispatch<SetStateAction<string>>,
+    count: number,
+    setCount: Dispatch<SetStateAction<number>>,
 }
-export default function BlockCounter({ label, setLabel, count, setCount }: CounterProps) {
-    if (label == undefined || setLabel == undefined) {
-        [label, setLabel] = useState("")
-    }
-    if (count == undefined || setCount == undefined) {
-        [count, setCount] = useState(0);
-    }
+export function BlockCounter({ label, setLabel, count, setCount }: CounterProps) {
     return (<div className={styles["block-counter"]}>
         <input className={styles["block-counter__label"]} type="text" value={label} onChange={e => setLabel(e.target.value)} />
         <input className={styles["block-counter__counter"]} type="text" value={count} onChange={e => setCount(parseInt(e.target.value) || 0)} />
