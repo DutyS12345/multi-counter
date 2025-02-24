@@ -49,7 +49,7 @@ export type LabelStateUpdate = {
     values?: LabelState;
 }
 export function updateLabelState(state: LabelState, action: LabelStateUpdate): LabelState {
-    console.log(action)
+    // console.log(action)
     if (action.idx !== undefined && action.value !== undefined) {
         return {
             ...state,
@@ -86,7 +86,7 @@ export function BasicCounterPage() {
             totalCount += counters[idx];
         }
     }
-    console.log(counters)
+    // console.log(counters)
     return <>
         <div className={styles["block-counter-layout"]}>
             <div className={styles["label-input"]}>
